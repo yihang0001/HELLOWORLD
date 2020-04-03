@@ -5,7 +5,7 @@
      <h2>祝发财!</h2><br/>
      <h2>---来自 蔡</h2>
      </div>
-      <el-input v-model="filterText" placeholder="Filter keyword" style="margin-bottom:30px;"/>
+
   </div>
 </template>
 
