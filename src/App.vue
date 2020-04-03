@@ -1,11 +1,11 @@
 <template>
   <div id="app" >
-   <div v-show="isShow"><br/>
+   <div><br/>
     <h2>永远相信美好的事情即将发生</h2><br/>
      <h2>祝发财!</h2><br/>
      <h2>---来自 蔡</h2>
      </div>
-   <button v-on:click="showorhide()">你好</button>
+      <el-input v-model="filterText" placeholder="Filter keyword" style="margin-bottom:30px;"/>
   </div>
 </template>
 
@@ -14,15 +14,8 @@ import HelloWorld from './components/HelloWorld'
 
 export default {
   name: 'App',
-  data:{
-   isShow: true
-  },
   components: {
     HelloWorld
-  },
-  methods:{
-  showorhide:function(){
-  this.isShow = !this.isShow;
   }
   }
 }
